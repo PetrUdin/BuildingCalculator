@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calc__container">
+        <h1 class="calc__header">Калькулятор стоимости забора</h1>
+        <div class="form__group">
+            <h3 class="form-group__tile">Длина забора м. (мин. длина доступная для заказа - 20м)</h3>
+            <div class="form-group__control control-length">
+                <input type="text" class="control__input" value="10" id="total-length">
+            </div>
+            <h3 class="form-group__tile">Расстояние от МКАД</h3>
+            <div class="form-group__control control-dist">
+                <input type="text" class="control__input" value="10" id="distance" readonly>
+                <input type="range" class="control__input" step="1" min="0" max="100" value="10" id="distance-range">
+            </div>
+        </div>
+
+        <div class="form__group">
+            <div class="form-group__tile">Материал забора:</div>
+            <div class="form-group__control control-material">
+                <button data-type="prof" class="control__button control__button-active">Профнастил</button>
+                <button data-type="wood" class="control__button">Дерево</button>
+                <button data-type="brick" class="control__button">Кирпич </button>
+            </div>
+        </div>
+
+        <div class="form__group">
+            <div class="form-group__tile">Дополнительные опции:</div>
+            <div class="form-group__control control-dop">
+                <p><input class="checkbox" type="checkbox" value="21687" checked>Ворота</p>
+                <p><input class="checkbox" type="checkbox" value="12758" checked>Калитка</p>
+                <p><input class="checkbox" type="checkbox" value="25934">Электрические ворота</p>
+                <p><input class="checkbox" type="checkbox" value="30000">Навес</p>
+            </div>
+        </div>
+        <button class="calc-btn">Рассчитать</button>
+        <h2>Итоговая стоимость <span id="result">10</span> руб.</h2>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+
+</html>

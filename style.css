@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: grey;
+    color: white;
+}
+.calc__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.calc__header {
+    margin-bottom: 30px;
+}
+.form__group {
+    margin-top: 24px;
+}
+.form__group__tile {
+    font-size: 20px;
+}
+.form__group__control {
+    margin-top: 8px;
+}
+.control {
+    display: flex;
+}
+.control__input {
+    width: 100%;
+    font-size: 35px;
+    background: none;
+    border-bottom: solid white ;
+    border-width:  0 0 1px;
+    color: white;
+    outline: none;
+}
+.control__button {
+    background: none;
+    cursor: pointer;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 25px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.control__button:hover,
+.control__button-active {
+    border-color: white;
+}
+.control__button {
+    margin-right: 12px;
+}
+h2 {
+    margin: 50px 0;
+    font-size: 25px;
+}
+span {
+    font-size:35px;
+}
+.control-length {
+    margin-bottom: 20px;
+}
+.form-group__tile {
+    margin-bottom: 20px;
+}
+.checkbox {
+    margin: 0 5px;  
+}
+.control-dop {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+#distance {
+    border:none;
+}
+.calc-btn {
+    background: none;
+    cursor: pointer;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 25px;
+    outline: none;
+    border: 3px solid #FFFFFf;
+    transition: 0.2s;
+}
+.calc-btn:hover {
+    border-color:tomato;
+}
+.calc-btn:active {
+    filter: brightness(0.7);
+}
