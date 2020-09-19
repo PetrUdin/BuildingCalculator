@@ -5,6 +5,8 @@
 ### Цели проекта:
 Проект выполнен в образовательных целях
 
+### Ссылка на GitHub Pages: <https://petrudin.github.io/BuildingCalculator/>
+
 ### Screenshots:
 
 
